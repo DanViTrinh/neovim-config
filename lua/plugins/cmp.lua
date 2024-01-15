@@ -23,6 +23,15 @@ return {
       local cmp = require("cmp")
 
       opts.mapping = vim.tbl_extend("force", opts.mapping, {
+        -- jump to next luasnip when aborting cmp suggestions
+        ["<C-e>"] = cmp.mapping(function()
+          if luasnip.expand_or_jumpable() then
+            luasnip.expand_or_jump()
+          else
+            cmp.mapping.abort()
+          end
+        end),
+
         ["<Tab>"] = cmp.mapping(function(fallback)
           if cmp.visible() then
             cmp.select_next_item()
