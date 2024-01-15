@@ -5,5 +5,12 @@ return {
     { "Shatur/neovim-ayu", event = "User ColorSchemeLoad" },
     { "nyoom-engineering/oxocarbon.nvim", event = "User ColorSchemeLoad" },
     { "joshdick/onedark.vim", event = "User ColorSchemeLoad" },
+    { "folke/tokyonight.nvim", event = "User ColorSchemeLoad" },
+    {
+      "LazyVim/LazyVim",
+      opts = {
+        colorscheme = "tokyonight-storm",
+      },
+    },
   },
 }

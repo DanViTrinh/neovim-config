@@ -10,3 +10,6 @@ keymap("i", "jk", "<ESC>", opts)
 -- faster movement
 keymap("n", "J", "5j", opts)
 keymap("n", "K", "5k", opts)
+
+-- join lines
+keymap("n", "<leader>j", "J", opts)
