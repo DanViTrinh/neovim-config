@@ -22,4 +22,5 @@ keymap("t", "<C-j>", [[<Cmd>wincmd j<CR>]], opts)
 keymap("t", "<C-k>", [[<Cmd>wincmd k<CR>]], opts)
 
 -- to escape terminal
-keymap("t", "jk", [[<C-\><C-n>]], opts)
+-- disabled because it messes with moving in lazygit
+-- keymap("t", "jk", [[<C-\><C-n>]], opts)

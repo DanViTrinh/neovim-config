@@ -3,3 +3,5 @@
 -- Add any additional options here
 -- windowbar on top of splits that indicate what file
 vim.opt.winbar = "%=%m %f"
+
+vim.opt.colorcolumn = "80"
