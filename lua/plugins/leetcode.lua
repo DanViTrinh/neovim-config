@@ -1,3 +1,4 @@
+local leet_arg = "leetcode.nvim"
 return {
   {
     "kawre/leetcode.nvim",
@@ -12,9 +13,11 @@ return {
       "rcarriga/nvim-notify",
       "nvim-tree/nvim-web-devicons",
     },
+    lazy = leet_arg ~= vim.fn.argv()[1],
     opts = {
       -- configuration goes here
       lang = "python3",
+      arg = leet_arg,
     },
   },
 }
