@@ -1,8 +1,13 @@
+-- friendly snippets
+require("luasnip/loaders/from_vscode").lazy_load()
+
 return {
+  { "rafamadriz/friendly-snippets" },
   -- Use <tab> for completion and snippets (supertab)
   -- first: disable default <tab> and <s-tab> behavior in LuaSnip
   {
     "L3MON4D3/LuaSnip",
+    dependencies = { "rafamadriz/friendly-snippets" },
     keys = function()
       return {}
     end,
