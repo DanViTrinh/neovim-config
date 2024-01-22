@@ -1,6 +1,17 @@
 return {
   {
-    { "catppuccin/nvim", name = "catppuccin", event = "User ColorSchemeLoad" },
+    {
+      "catppuccin/nvim",
+      name = "catppuccin",
+      event = "User ColorSchemeLoad",
+
+      opts = {
+        background = {
+          light = "latte",
+          dark = "frappe",
+        },
+      },
+    },
     { "olivercederborg/poimandres.nvim", event = "User ColorSchemeLoad" },
     { "Shatur/neovim-ayu", event = "User ColorSchemeLoad" },
     { "nyoom-engineering/oxocarbon.nvim", event = "User ColorSchemeLoad" },
@@ -9,7 +20,7 @@ return {
     {
       "LazyVim/LazyVim",
       opts = {
-        colorscheme = "catppuccin-latte",
+        colorscheme = "catppuccin",
       },
     },
   },
