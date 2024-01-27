@@ -5,3 +5,7 @@
 vim.opt.winbar = "%=%m %f"
 
 vim.opt.colorcolumn = "80"
+
+vim.opt.swapfile = false
+
+vim.opt.clipboard = "" -- disable global clipboard

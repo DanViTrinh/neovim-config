@@ -26,3 +26,11 @@ keymap("t", "<C-k>", [[<Cmd>wincmd k<CR>]], opts)
 -- keymap("t", "jk", [[<C-\><C-n>]], opts)
 -- replaced with normal escape
 keymap("t", "<Esc>", [[<C-\><C-n>]], opts)
+
+-- copy to system clip board
+keymap({ "n", "v" }, "<leader>y", [["+y]])
+keymap("n", "<leader>Y", [["+Y]])
+
+-- paste to system clipboard
+keymap({ "n", "v" }, "<leader>p", [["+p]])
+keymap({ "n", "v" }, "<leader>P", [["+P]])
