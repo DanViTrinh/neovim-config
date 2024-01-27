@@ -28,9 +28,9 @@ keymap("t", "<C-k>", [[<Cmd>wincmd k<CR>]], opts)
 keymap("t", "<Esc>", [[<C-\><C-n>]], opts)
 
 -- copy to system clip board
-keymap({ "n", "v" }, "<leader>y", [["+y]])
-keymap("n", "<leader>Y", [["+Y]])
+keymap({ "n", "v" }, "<leader>y", [["+y]], { desc = "Copy to system clipboard like y" })
+keymap("n", "<leader>Y", [["+Y]], { desc = "Copy to system clipboard like Y" })
 
 -- paste to system clipboard
-keymap({ "n", "v" }, "<leader>p", [["+p]])
-keymap({ "n", "v" }, "<leader>P", [["+P]])
+keymap({ "n", "v" }, "<leader>p", [["+p]], { desc = "Paste from system clipboard like p" })
+keymap({ "n", "v" }, "<leader>P", [["+P]], { desc = "Paste from system clipboard like P " })
