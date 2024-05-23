@@ -1,6 +1,3 @@
--- friendly snippets
-require("luasnip/loaders/from_vscode").lazy_load()
-
 return {
   { "rafamadriz/friendly-snippets" },
   -- Use <tab> for completion and snippets (supertab)
