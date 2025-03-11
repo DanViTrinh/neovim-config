@@ -4,8 +4,9 @@
 -- windowbar on top of splits that indicate what file
 vim.opt.winbar = "%=%m %f"
 
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "120"
 
 vim.opt.swapfile = false
 
 vim.opt.clipboard = "" -- disable global clipboard
+vim.opt.wrap = true
